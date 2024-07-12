@@ -34,7 +34,7 @@ export function Answer({
       onClick={() => (displayResult ? undefined : handleAnswerClick())}
       className={`border border-green-500 rounded p-4 w-full flex items-center justify-center ${answerColor}`}
     >
-      {answer}
+      <div dangerouslySetInnerHTML={{ __html: answer }} />
     </button>
   );
 }
